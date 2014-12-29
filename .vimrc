@@ -41,7 +41,7 @@ filetype plugin indent on     " required!
 filetype indent on
 
 syntax on
-colorscheme molokai
+colorscheme desert
 
 scriptencoding=utf-8
 " $BA^F~%b!<%I;~!"%9%F!<%?%9%i%$%s$N?'$rJQ99(B
@@ -88,3 +88,8 @@ let g:neocomplcache_enable_smart_case = 1
 let g:neocomplcache_enable_underbar_completion = 1
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+if !exists('loaded_matchit')
+  " matchitを有効化
+  runtime macros/matchit.vim
+endif
