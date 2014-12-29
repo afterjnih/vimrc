@@ -10,6 +10,8 @@ set tabstop=2
 set smartindent
 set laststatus=2
 
+set shiftwidth=2
+set expandtab
 set nocompatible               " be iMproved
 filetype off
 
