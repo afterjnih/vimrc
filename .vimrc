@@ -2,6 +2,8 @@
 set fileencoding=japan
 set fileencodings=iso-2022-jp,utf-8,euc-jp,ucs-2le,ucs-2,cp932 
 
+"検索時にマッチ箇所をハイライト表示
+set hlsearch
 set number
 set title
 set showmatch
