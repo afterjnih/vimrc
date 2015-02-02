@@ -33,13 +33,14 @@ let NERDTreeShowHidden = 1
 NeoBundle 'tomasr/molokai'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tomtom/tcomment_vim'
-
 NeoBundle 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_enable_on_vim_startup = 1
 
 NeoBundle 'Shougo/neocomplcache'
-
-
+NeoBundle 'scrooloose/syntastic'
+let g:syntastic_mode_map = { 'mode': 'active',
+            \ 'active_filetypes': ['ruby'] }
+let g:syntastic_ruby_checkers = ['rubocop']
 
 filetype plugin indent on     " required!
 filetype indent on
@@ -97,3 +98,6 @@ if !exists('loaded_matchit')
   " matchitを有効化
   runtime macros/matchit.vim
 endif
+
+" backspeceを有効化
+set backspace=indent,eol,start
